@@ -11,7 +11,20 @@ Pass the value for number of iterations and print the numbers.
 End the program.
 
 # PROGRAM:
-
+~~~
+import random
+def main():
+    n = int(input("Enter how many random numbers to generate: "))
+    print("Generated Random Numbers:")
+    for _ in range(n):
+        print(random.randint(0, 2**31 - 1), end=" ")  # randint to mimic C's rand() range
+if __name__ == "__main__":
+    main()
+~~~
 # OUTPUT:
 
+<img width="1919" height="1014" alt="image" src="https://github.com/user-attachments/assets/7e7ca04d-9ba3-4b51-b413-ad4dccc0e959" />
+
+
 # RESULT:
+the above program is executed in Implementation of Pseudorandom Number Generation Using Standard library
